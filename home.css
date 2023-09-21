@@ -82,7 +82,7 @@ header{
     color: black;
 }
 
-.wrapper{
+/* .wrapper{
     position:relative;
     width: 400px;
     height: 440px;
@@ -127,7 +127,6 @@ header{
     transition: .5s;
 }
 
-/* todo find the error in the focus and valid */
 .input-box input:focus~label,
 .input-box input:valid~label
 {
@@ -151,4 +150,4 @@ header{
     font-size: 1.2em;
     color: black;
     line-height: 57px;
-}
+} */

@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   /* TODO find a better background image */
-  background-image: url("background_image.jpg");
+  background-image:url("/pics/background_image.jpg");
   background-repeat: no repeat;
   background-size: 100%;
   background-position: center;
@@ -32,7 +32,7 @@ header {
   color: white;
   /* user-select: none; */
 }
-.navigation a {
+.navigation .page-anchor {
   font-size: 1.1em;
   color: white;
   position: relative;
@@ -42,7 +42,7 @@ header {
   /* user-select: none; */
 }
 
-.navigation a::after {
+.navigation .page-anchor::after {
   content: "";
   position: absolute;
   left: 0;
@@ -56,7 +56,7 @@ header {
   transition: 0.5s;
 }
 
-.navigation a:hover::after {
+.navigation .page-anchor:hover::after {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -80,72 +80,3 @@ header {
   color: black;
 }
 
-/* .wrapper{
-    position:relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border:2px solid rgba(255,255,255,.5);
-    border-radius: 20px;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 0 30px,rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper .form-box{
-    width: 100%;
-    padding: 40px;
-}
-
-.form-box h2{
-    font-size: 2em;
-    color: black;
-    text-align: center;
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid black;
-    margin: 30px 0;
-}
-
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: black;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label
-{
-    top: -5px;
-}  
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: black;
-    font-weight: 600;
-    pad: 0 35px 0 5px;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: black;
-    line-height: 57px;
-} */
